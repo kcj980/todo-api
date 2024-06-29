@@ -1,0 +1,29 @@
+GET http://localhost:3000/tasks
+###
+GET http://localhost:3000/tasks?sort=oldest
+###
+GET http://localhost:3000/tasks?count=3
+###
+GET http://localhost:3000/tasks/667ff2dc243bdd4f21b6225a
+
+
+###
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "title":"나와!!!7"
+}
+
+###
+PATCH http://localhost:3000/tasks/667fe24afd10f3244946771c
+Content-Type: application/json
+
+{
+  "title": "시키기123",
+  "isComplete": true
+}
+
+
+###
+DELETE http://localhost:3000/tasks/667fe24afd10f3244946771c
